@@ -1,0 +1,9 @@
+<% if @kitten.errors.any? %>
+  <h1>There were <%= pluralize(@kitten.errors.count, "error") %></h1>
+  <% @kitten.errors.each do |attribute, message| %>
+    <ul>
+      <li><%= attribute.capitalize %> <%=message %></li>
+    </ul>
+  <% end %>
+<% end %>
+

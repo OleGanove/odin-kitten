@@ -1,0 +1,26 @@
+<div class="container">
+  <%= render 'flash' %>
+  <%= link_to "New kitty kat", new_kitten_path %>
+  <h1>Kitty Kats</h1>
+  <table>
+    <tr>
+      <th>Cat</th>
+      <th>Name</th>
+      <th>Age</th> 	       
+      <th>Cuteness</th>
+      <th>Softness</th>
+    </tr>
+    
+    <% @kittens.each do |kitten| %>
+    <tr>
+      <td><%= kitten.id %></td>
+      <td><%= link_to kitten.name, kitten_path(kitten) %></td>
+      <td><%= kitten.age %></td>
+      <td><%= kitten.cuteness %></td>
+      <td><%= kitten.softness %></td>
+      <td><%= link_to "edit", edit_kitten_path(kitten) %></td>
+      <td><%= link_to "delete", kitten, method: :delete, data: { confirm: "Are you sure?" } %></td>
+    </tr> 
+    <% end %>  
+  </table>
+</div>

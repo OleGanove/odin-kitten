@@ -1,5 +1,5 @@
 == Odin Kitten
 
-This app is an exercice to practice creating a data-producing API. It is part of the Odin Project Curriculum. See this site for further instructions: 
+This app is an exercice to practice creating a data-producing API. It is part of the Odin Project Curriculum. See this site for further information: 
 
 http://www.theodinproject.com/ruby-on-rails/apis
